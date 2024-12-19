@@ -1,0 +1,186 @@
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Lista de posts */
+  .post-list {
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #333;
+  }
+  
+  .post-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-item h2 {
+    font-size: 1.6em;
+  }
+  
+  .post-item a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .post-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .post-item p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .post-item .read-more {
+    color: #1a73e8;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+  }
+  
+  /* Adicionando responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    .post-list {
+      padding: 15px;
+    }
+  
+    .post-item {
+      padding: 15px;
+    }
+  
+    .post-item h2 {
+      font-size: 1.4em;
+    }
+  }
+  /* Estilos do Cabeçalho */
+header {
+  background: linear-gradient(135deg, #1a73e8, #0044cc); /* Gradiente suave de azul */
+  padding: 20px 0;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1f1f1; /* Cor mais clara ao passar o mouse */
+  transform: translateY(-3px); /* Levanta o link quando o mouse passa por cima */
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+  transform: scaleX(1); /* Adiciona uma linha abaixo do link ao passar o mouse */
+}
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Empilha o título e os links verticalmente */
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
+
+  
